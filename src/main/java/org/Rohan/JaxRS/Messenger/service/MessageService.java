@@ -43,7 +43,9 @@ public class MessageService {
 	public Message updateMessage(Message message)
 	{
 		if(message.getId()<=0)
+		{
 			return null;
+		}
 		messages.put(message.getId(), message);
 		return message;
 	}
